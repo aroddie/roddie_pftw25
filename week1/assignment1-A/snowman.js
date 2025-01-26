@@ -14,20 +14,23 @@ function draw() {
     fill("#f1f1f1");
     stroke(stroke1);
     strokeWeight(20);
-    // left leg
-    ellipse(350, 650, 200);
-    // right leg
-    ellipse(650, 650, 200);
+    // base
+    ellipse(500, 600, 350);
     // body
-    ellipse(500, 450, 350, 400);
+    ellipse(500, 400, 250);
+    // left arm
+    line(400, 400, 200, 300);
+    // right arm
+    line(600, 400, 800, 300);
     // head
     ellipse(500, 200, 200);
     // hat brim
+    fill(stroke2);
     stroke(stroke2);
     strokeWeight(40);
     line(400, 120, 600, 120);
     // hat body
-    quad(400, 50, 600, 50, 550, 120, 450, 120);
+    quad(450, 50, 550, 50, 550, 120, 450, 120);
     //eyes
     stroke(0);
     strokeWeight(50);
