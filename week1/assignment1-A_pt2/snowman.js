@@ -45,8 +45,12 @@ function draw() {
     // left arm
     stroke(stroke1)
     line(400, 400, 200, 300);
+    line(220, 308, 210, 285);
+    line(220, 308, 195, 320);
     // right arm
     line(600, 400, 800, 300);
+    line(780, 308, 790, 285);
+    line(780, 308, 805, 320);
     // hat brim
     fill(stroke2);
     stroke(stroke2);
