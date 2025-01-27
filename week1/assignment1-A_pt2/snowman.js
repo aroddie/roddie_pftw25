@@ -1,7 +1,7 @@
 let grid = undefined;
-let fill1 = window.prompt("what color is the snow?", "white").toLowerCase();
-let stroke1 = window.prompt("what color are the trees?", "brown").toLowerCase();
-let stroke2 = window.prompt("what's your favorite color?", "purple").toLowerCase();
+let fill1 = window.prompt("what color is the snow?").toLowerCase();
+let stroke1 = window.prompt("what color are the branches?").toLowerCase();
+let stroke2 = window.prompt("what's your favorite color?").toLowerCase();
 
 function setup() {
     createCanvas(1000, 800);
@@ -14,9 +14,9 @@ function draw() {
     //cloud
     fill("white");
     stroke("white");
-    ellipse(700, 100, 150, 80);
-    ellipse(625, 110, 70, 60);
-    ellipse(775, 110, 70, 60);
+    ellipse(700, 100, 150, 80); //middle
+    ellipse(625, 110, 70, 60); //left
+    ellipse(775, 110, 70, 60); //right
     // snow
     stroke("gray");
     fill(fill1);
@@ -29,9 +29,9 @@ function draw() {
     // tree branches
     stroke("darkgreen");
     fill("darkgreen");
-    triangle(100, 300, 150, 350, 50, 350);
-    triangle(100, 265, 130, 300, 70, 300);
-    triangle(100, 225, 120, 250, 80, 250);
+    triangle(100, 300, 150, 350, 50, 350); //bottom
+    triangle(100, 265, 130, 300, 70, 300); //middle
+    triangle(100, 225, 120, 250, 80, 250); //top
     // snowman legs
     stroke("gray");
     fill(fill1);
@@ -54,13 +54,24 @@ function draw() {
     line(400, 120, 600, 120);
     // hat body
     quad(450, 50, 550, 50, 550, 120, 450, 120);
+    // blushies
+    stroke("pink");
+    fill("pink");
+    strokeWeight(0);
+    ellipse(425, 230, 40, 20);
+    ellipse(575, 230, 40, 20);
     //eyes
     stroke(0);
     strokeWeight(50);
-    point(425, 200);
-    point(575, 200);
+    point(430, 195);
+    point(570, 195);
     // mouth
     noFill();
     strokeWeight(10);
     arc(500, 210, 30, 30, 0, PI);
+    // eye shines
+    stroke(255);
+    strokeWeight(15)
+    point(425, 185);
+    point(565, 185);    
 }
