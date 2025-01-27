@@ -1,7 +1,8 @@
 let grid = undefined;
 let fill1 = window.prompt("what color is the snow?").toLowerCase();
 let stroke1 = window.prompt("what color are the branches?").toLowerCase();
-let stroke2 = window.prompt("what's your favorite color?").toLowerCase();
+let myColor = window.prompt("what's your favorite color?").toLowerCase();
+let name = window.prompt("what is the snowman's name?")
 
 function setup() {
     createCanvas(1000, 800);
@@ -52,8 +53,8 @@ function draw() {
     line(780, 308, 790, 285);
     line(780, 308, 805, 320);
     // hat brim
-    fill(stroke2);
-    stroke(stroke2);
+    fill(myColor);
+    stroke(myColor);
     strokeWeight(40);
     line(400, 120, 600, 120);
     // hat body
@@ -77,5 +78,11 @@ function draw() {
     stroke(255);
     strokeWeight(15)
     point(425, 185);
-    point(565, 185);    
+    point(565, 185);
+    // greeting
+    fill(myColor);
+    strokeWeight(5);
+    stroke("#ccc");
+    textSize(50);
+    text("Winter Greetings from " + name, 200, 750) ;   
 }
