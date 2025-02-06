@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
 function setup() {
   createCanvas(200, 200);
 }

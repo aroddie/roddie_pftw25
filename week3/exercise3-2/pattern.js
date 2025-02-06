@@ -1,12 +1,10 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
 function setup() {
-  createCanvas(200, 200);
+  createCanvas(600, 600);
 }
 
-function createTile() {
-  translate(0, 0);
-  fill("pink");
+function createTile(originX, originY, primaryColor, moonColor, moonPhase) {
+  translate(originX, originY);
+  fill(primaryColor);
   strokeWeight(0);
   rect(0, 0, 200, 200);
   stroke("white") 
@@ -15,11 +13,12 @@ function createTile() {
   arc(200, 0, 100, 100, HALF_PI, PI);
   arc(200, 200, 100, 100, PI, PI+HALF_PI);
   arc(0, 200, 100, 100, PI+HALF_PI, TWO_PI); // End Corner Arcs
-  fill("white");
+  fill(moonColor);
+  stroke(moonColor);
   circle(100, 100, 70); // Moon base
-  fill("pink");
+  fill(primaryColor);
   strokeWeight(0);
-  circle(115, 100, 60); // Moon Cutout
+  circle(moonPhase, 100, 60); // Moon Cutout
   noFill();
   stroke("yellow");
   strokeWeight(5);
@@ -34,6 +33,13 @@ function createTile() {
 }
 
 function draw() {
-  noLoop();
-  createTile();
+  createTile(0, 0, 'pink', 'white', 115);
+  createTile(0, 200, 'lavender', 'indigo', 65); 
+  createTile(0, 200, 'lightblue', 'yellow', 110);
+  createTile(200, -400, 'magenta', 'silver', 100);
+  createTile(0, 200, 'purple', 'lightblue'); // no moonPhase = full moon
+  createTile(0, 200, 'blue', 'pink', 100);
+  createTile(200, -400, 'red', 'cornsilk', 85);
+  createTile(0, 200, 'indigo', 'lavender', 135);
+  createTile(0, 200, 'black', 'white', 90);
 }
