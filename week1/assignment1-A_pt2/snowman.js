@@ -1,6 +1,6 @@
 let grid = undefined;
-let fill1 = window.prompt("what color is the snow?").toLowerCase();
-let stroke1 = window.prompt("what color are the branches?").toLowerCase();
+let fill1 = window.prompt("what color is the snow?", "white").toLowerCase();
+let stroke1 = window.prompt("what color are the branches?", "brown").toLowerCase();
 let myColor = window.prompt("what's your favorite color?").toLowerCase();
 let name = window.prompt("what is the snowman's name?")
 
