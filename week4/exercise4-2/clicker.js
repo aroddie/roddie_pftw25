@@ -16,9 +16,12 @@ function draw () {
     textSize(28);
     strokeWeight(0);
     fill('green');
+    // Add Click Counter at the bottom of the screen
     text(clickCount, 0, 495);
+    // rectangle goes here
     drawShape();
     rectX += speed;
+    // end the game
     if(rectX > width + 1) {
         noLoop();
         textSize(18);
@@ -26,12 +29,14 @@ function draw () {
     }
 }
 
+// track clicks
 function mousePressed() {
     if((mouseX >= rectX && mouseX <= rectX + rectWidth) && (mouseY >= rectY && mouseY <= rectY + rectHeight)) {
         clickCount++;
     }
 }
 
+// draw rectangle
 function drawShape() {
     fill('navy');
     stroke('navy');
