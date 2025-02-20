@@ -43,7 +43,7 @@ class Bubble {
 }
 
 // Allow User to input number of bubbles
-let bubblesNumber = Number(window.prompt('How many bubbles? (Numerals only, please)'));
+let bubblesNumber = Number(window.prompt('How many bubbles?', 6));
 
 // randomize bubble color
 let colorVar= ['lavender', 'pink', 'aliceblue', 'yellow', 'aquamarine', 'peachpuff'];
