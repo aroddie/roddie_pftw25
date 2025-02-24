@@ -12,6 +12,8 @@ const gameState = {
     attempts: 0,
     waiting: false
 };
+let comingSoon;
+let modak;
 
 let cardfaceArray = [];
 function preload() {
@@ -27,6 +29,9 @@ function preload() {
         loadImage('images/waning-crescent.png'),
         loadImage('images/witchs-moon.png'),
     ]
+
+    comingSoon = loadFont('./fonts/ComingSoon-Regular.ttf')
+    modak = loadFont('./fonts/Modak-Regular.ttf')
 }
 function cardback (x, y) {
     fill('white'); // moons
@@ -90,12 +95,12 @@ function draw () {
         stroke('midnightblue');
         strokeWeight(5);
         textSize(66);
-        textFont('Modak');
+        textFont(modak);
         text('You win!!!', 650, 550);
         noStroke();
         textSize(20);
         fill('midnightblue');
-        textFont('Coming Soon');
+        textFont(comingSoon);
         text('Refresh the page to play again!', 660, 575);
         noLoop();
     }
@@ -110,11 +115,11 @@ function draw () {
     gameState.waiting = false;
     fill('midnightblue');
     textSize(36);
-    textFont('Coming Soon');
+    textFont(comingSoon);
     text('attempts: ' + gameState.attempts, 650, 400);
     text('matches: ' + gameState.numMatched, 650, 350);
     textSize(72);
-    textFont('Modak');
+    textFont(modak);
     text(title, 650, 75);
 }
 
