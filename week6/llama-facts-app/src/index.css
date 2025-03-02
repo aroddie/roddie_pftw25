@@ -1,0 +1,101 @@
+/**************
+Font Import
+***************/
+@import url('https://fonts.googleapis.com/css2?family=Lakki+Reddy&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/***************
+Global Defaults
+****************/
+html {
+  --green: #6AAF64;
+  --pink: #ffd7e7;
+  --brown: #F2DEC4;
+  --white: #F8F8FF;
+  --black: #222;
+  --cursive: "Leckerli One", cursive;
+  --serif: "Lakki Reddy", Tahoma, serif;
+  --sans-serif: "Open Sans", sans-serif;
+}
+body {
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 50px;
+  color: var(--black);
+  background-color: var(--green);
+  font-family: var(--sans-serif);
+}
+
+/*************
+  Typography
+**************/
+h1 {
+  text-align: center;
+  font-family: var(--serif);
+  margin: 0;
+}
+
+h2, h3, h4 {
+  font-family: var(--serif);
+}
+
+.subheader {
+  margin: 12px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  font-family: var(--serif);
+}
+
+/**************
+Fact of the Day 
+    Section
+***************/
+#randomFact {
+  text-align: center;
+  border: 5px dotted var(--green);
+  border-radius: 10px;
+  background-color: var(--pink);
+  padding: 0 30px 30px 30px;
+  max-width: 500px;
+  margin: 50px auto;
+}
+
+#randomFact h2 {
+  font-family: var(--cursive);
+}
+
+/********************
+Display Facts Section
+*********************/
+#displayFacts {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  gap: 20px;
+  align-items: stretch;
+}
+
+#displayFacts div {
+  background-color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+#displayFacts>div:hover {
+  transition: .2s ease-out;
+  box-shadow: 0px 0px 20px var(--brown);
+  background-color: var(--brown);
+}
+
+/**************
+    Misc
+**************/
+.hide {
+  display: none;
+}
