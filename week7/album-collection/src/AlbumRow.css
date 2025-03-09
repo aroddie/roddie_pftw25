@@ -1,0 +1,19 @@
+.odd {
+    background-color: mistyrose;
+}
+
+.burned img {
+    border: 3px dashed red;
+}
+
+.car::after {
+    content: " 🚗"
+}
+
+tbody tr {
+    transition: .5s;
+}
+
+tbody tr:hover {
+    background-color: lavenderblush;
+}

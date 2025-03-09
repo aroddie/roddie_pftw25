@@ -1,0 +1,35 @@
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.album-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.album-table thead {
+  background-color: white;
+  position: sticky;
+  padding-top: 20px;
+  top: 0;
+}
+
+.album-table td, .album-table th {
+  text-align: center;
+  padding: 5px;
+}
+
+.album-table img {
+  max-width: 100px;
+}
+
+.footer {
+  text-align: center;
+  background-color: mistyrose;
+  padding: 20px;
+}
