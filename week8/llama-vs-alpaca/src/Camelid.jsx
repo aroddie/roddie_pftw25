@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 
 export default function Camelid({url}) {
     return (
@@ -6,8 +5,4 @@ export default function Camelid({url}) {
             <img src={url} />
         </>
     )
-}
-
-Camelid.propTypes = {
-    url: PropTypes.string.isRequired,
 }
