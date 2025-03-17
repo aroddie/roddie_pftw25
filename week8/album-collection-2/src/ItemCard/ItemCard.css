@@ -1,0 +1,68 @@
+.albumCard {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    height: 375px;
+    border: 1px solid lavender;
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    transition: 0.3s;
+}
+
+.albumCard:hover {
+    box-shadow: 5px 3px 20px rgba(50, 50, 61, .6);
+}
+
+.cardImg img {
+    max-width: 150px;
+    width: 100%
+}
+
+.burned::before {
+    content: "🔥";
+    position: absolute;
+    left: 15px;
+
+}
+
+.car::before {
+    content: "🚗";
+    position: absolute;
+    top: 30px;
+    left: 15px;
+}
+
+.action {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.action a img {
+    width: 25px;
+    height: 25px;
+
+}
+
+.action a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 3px;
+    border-radius: 4px;
+    border: 1px solid pink;
+    background-color: mistyrose;
+    transition: 0.2s;
+
+}
+
+.action a:hover {
+    background-color: pink;
+}
