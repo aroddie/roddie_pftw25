@@ -15,6 +15,7 @@ function App() {
   return (
     <div>
       <h1>Alpaca Fan Club</h1>
+      <h2>Member Registration</h2>
       <form onSubmit={handleSubmit(getFormData)}>
         <fieldset>
           <legend>Personal Data</legend>
