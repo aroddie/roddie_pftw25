@@ -1,0 +1,37 @@
+.member-card {
+    max-width: 450px;
+    margin-top: 20px;
+}
+
+.member-card div {
+    padding: 5px;
+}
+
+.red, .brown, .black, .white {
+    border-radius: 10px;
+
+}
+
+.red {
+    border: 2px solid maroon;
+    padding: 20px;
+}
+.red h2 {
+    color: maroon;
+}
+
+.brown {
+    border: 2px solid brown;
+}
+.brown h2 {
+    color: brown;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.white {
+    border: 2px solid black;
+}

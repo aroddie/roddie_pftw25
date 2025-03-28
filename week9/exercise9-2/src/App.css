@@ -1,0 +1,32 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+}
+
+.required::before {
+  content: "* ";
+  color: red;
+}
+
+p.required {
+  font-style: italic;
+  color: red;
+  font-size: small;
+}
+
+.error {
+  color: red;
+  font-weight: 700;
+}
