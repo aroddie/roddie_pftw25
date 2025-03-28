@@ -28,12 +28,12 @@ function App() {
         <div className="form-group">
           <label htmlFor="lastName" className="required">Last Name</label>
           <input type="text" defaultValue="" id="lastName"{...register("lastName", {required: true})} />
-          {errors.firstName ? (<p className="error">Please Enter Your Last Name</p>) : <></>}
+          {errors.lastName ? (<p className="error">Please Enter Your Last Name</p>) : <></>}
         </div>
         <div className="form-group">
           <label htmlFor="streetAddress" className="required"> Street Address</label>
           <input type="text" defaultValue="" id="streetAddress" {...register("streetAddress", {required: true})} />
-          {errors.firstName ? (<p className="error">Please Enter Your Address</p>) : <></>}
+          {errors.streetAddress ? (<p className="error">Please Enter Your Address</p>) : <></>}
         </div>
         <div className="form-group">
           <label htmlFor="state">State/Province</label>
