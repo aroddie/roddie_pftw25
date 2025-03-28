@@ -13,7 +13,7 @@ export default function MemberCard({
         <div className="member-card">
             <div className={favColor}>
                 <h2>Thanks, {firstName}!</h2>
-                <p>We've received your registration, and would like to welcome you as the newest member of the Alpaca fan Club.</p>
+                <p>We've received your registration, and would like to welcome you as the newest member of the Alpaca Fan Club.</p>
                 <p>Please review your information to ensure it is accurate:</p>
                 <div>
                     <strong>Name:</strong> {firstName} {lastName}
