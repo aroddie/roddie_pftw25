@@ -1,0 +1,24 @@
+body {
+  font-family: 'Trebuchet MS', Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: lavenderblush;
+}
+
+.collection {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.page {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.error {
+  color: red;
+  font-weight: 600;
+}
