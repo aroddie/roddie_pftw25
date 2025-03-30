@@ -3,9 +3,9 @@ import { useState } from "react";
 import Masthead from "./Masthead/Masthead";
 import ItemCard from "./ItemCard/ItemCard";
 import { nanoid } from "nanoid";
-import {useForm } from "react-hook-form";
+import { NewAlbumForm } from "./NewAlbumForm/NewAlbumForm";
 function App() {
-  const { register, handleSubmit, formState: { errors} } = useForm();
+
   const [albums, setAlbums] = useState([
     {
       album: "Let Go",
@@ -108,6 +108,14 @@ function App() {
       id: 10
     },
   ]);
+  function addNewAlbum(data) {
+    // Uses data to add albums to array
+    console.log("new album data", data)
+    const newId = nanoid(6);
+    const newAlbum = {...data, id: newId};
+    console.log(newAlbum);
+    setAlbums([...albums, newAlbum]);
+  }
   function deleteCard(id) {
     console.log("delete me", id);
     const updatedArray = albums.filter((cdAlbum) => {
@@ -136,43 +144,8 @@ function App() {
             {...cdAlbum} />
           )
         })}
-
-        <form onSubmit={handleSubmit((data) => {
-          console.log("form data", data);
-          const newId = String(Math.round(Math.random()*10000))
-          const newAlbum = {...data, id: newId}
-          setAlbums([...albums, newAlbum])
-        })}>
-          <fieldset>
-            <legend>
-              Add a CD!
-            </legend>
-            <div className="form-group">
-              <label htmlFor="album">Album Name</label>
-              <input type="text" id="album" {...register("album", { required: true })} />
-              {errors.album ? (<p className="error">Album Name Required</p>) : <></>}
-            </div>
-            <div className="form-group">
-              <label htmlFor="artist">Artist Name</label>
-              <input type="text" id="artist" {...register("artist", { required: true })} />
-              {errors.artist ? (<p className="error">Artist Name Required</p>) : <></>}
-            </div>
-            <div className="form-group">
-              <label htmlFor="year">Year Released</label>
-              <input type="text" {...register("year")} />
-            </div>
-            <div className="form-group">
-              <label htmlFor="genre">Genre</label>
-              <input type="text" {...register("genre")} />
-            </div>
-            <div className="form-group">
-              <label htmlFor="albumArt">Album Art (Link Please!)</label>
-              <input type="input" {...register("albumArt")} />
-            </div>
-          </fieldset>
-          <button type="submit">Add CD</button>
-        </form>
       </div>
+      <NewAlbumForm addAlbumFn={addNewAlbum} />
     </div>
   )
 }
