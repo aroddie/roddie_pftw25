@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    background-color: lightcyan;
+  }
+  h1, h2, h3 {
+    font-family: "Caprasimo", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  h1 {
+    font-size: 3em;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  nav {
+    display: inline-block;
+    position: sticky;
+    top: 10px;
+    margin: 10px;
+    padding: 10px;
+    background-color: lightblue;
+    border-radius: 5px;
+    transition: 0.2s;
+  }
+
+  nav:hover {
+    background-color: lightsteelblue;
+  }
+
+  nav::before {
+    content: "⮜ "
+  }
+  
+  .portfolio {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+
+  .project {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .project-images {
+    text-align: center;
+
+  }
+
+  div.img-block {
+    margin-bottom: 60px;
+
+  }
+  

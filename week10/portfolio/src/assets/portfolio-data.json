@@ -1,0 +1,303 @@
+[
+    {
+        "slug": "lavender-lounge",
+        "name": "The Lavender Lounge",
+        "thumbnail": "./thumbnails/lavender-lounge.gif",
+        "description": "Restaurant Branding and Environmental Design",
+        "summary": "This was a project for my Typography class in the Spring of 2024. I was tasked with conceptualizing a restaurant and creating its branding and assets. I chose to design a coffee shop in the San Francisco Bay Area centered around the queer community. I wanted to create a relaxing and peaceful community space where people could come and work, meet up with friends, or quickly grab a nice treat to incorporate a little fun and whimsy into their day.",
+        "images": [
+            {
+                "image": "./lav-lounge/store-sign.jpg",
+                "imgCaption": "Outside Signage",
+                "imgAlt": "A photographic mockup of a large rectangular sign mounted outside a building that reads 'The Lavender Lounge Coffee & Tea'."
+            },
+            {
+                "image": "./lav-lounge/door-sign.jpg",
+                "imgCaption": "Glass Door Sign",
+                "imgAlt": "A photographic mockup of glass double doors with 'The Lavender Lounge Coffee & Tea' printed on the right door and the hours printed on the left door. A large, stylized sprig of lavender spans both doors."
+            },
+            {
+                "image": "./lav-lounge/wall-menu.jpg",
+                "imgCaption": "Wall Menu",
+                "imgAlt": "A photographic mockup of a long printed chalkboard menu with sections for tea, coffee, specials, and other drinks"
+            },
+            {
+                "image": "./lav-lounge/held-menu.jpg",
+                "imgCaption": "Handheld Menu",
+                "imgAlt": "A photographic mockup of a printed bifold menu listing the food options for the Lavender Lounge."
+            },
+            {
+                "image": "./lav-lounge/cups.jpg",
+                "imgCaption": "Custom Cups",
+                "imgAlt": "A photographic mockup of custom to-go cups for the Lavender Lounge. The cups are printed affirmations like 'Hello Beautiful!', 'choose your destiny', 'take time to rest', and 'you got this!'"
+            }
+        ],
+        "design": true,
+        "illustration": false
+    },
+    {
+        "slug": "enso-theatre-ensemble",
+        "name": "Enso Theatre Ensemble",
+        "thumbnail": "./thumbnails/enso-logo.gif",
+        "description": "Nonprofit Branding and Marketing",
+        "summary": "Enso Theatre Ensemble was a nonprofit theater company based in Portland, OR who I worked with from their founding in 2015 until they shut down in 2020. They specialized in creating ensemble-based professional theatre and providing education and wellness workshops to the local community. Over my time with Enso, I created the logo, I designed all of their posters, programs, and other marketing materials for their shows and classes, and I edited their promotional and fundraising videos.",
+        "images": [
+            {
+                "image": "./enso/romeo-juliet.jpg",
+                "imgCaption": "The Romeo & Juliet Project",
+                "imgAlt": "A poster depicting two young women gazing at each other in front of a black brick wall with fragments of writing on it."
+            },
+            {
+                "image": "./enso/sif.jpg",
+                "imgCaption": "She is Fierce",
+                "imgAlt": "A poster depicting a ripped painting in an ornate frame. The woman in the painting is wearing a yellow dress and has a pair of red glasses perched on her head and is holding a glass of red wine. Inside the rip over the woman's mouth reads 'I should have opened my mouth much earlier'."
+            },
+            {
+                "image": "./enso/meet-me.jpg",
+                "imgCaption": "Meet Me at the Edge of the World",
+                "imgAlt": "A poster depicting a photograph of a road curving through the mountains. The sky is a map with four red pins arranged in a line and connected with red thread."
+            },
+            {
+                "image": "./enso/cot.jpg",
+                "imgCaption": "Care of Trees",
+                "imgAlt": "A poster depicting a couple holding hands in front of a tree trunk. Small green vines grow from one of the hands."
+            }
+        ],
+        "video": "https://www.youtube.com/embed/4rfgz7bTBUM?si=bfrpIIyxJxX0kXcd",
+        "design": true,
+        "illustration": false
+    },
+    {
+        "slug": "roll-play",
+        "name": "Roll Play",
+        "thumbnail": "./thumbnails/rollplay.jpg",
+        "description": "Publication Design: TTRPG Magazine",
+        "summary": "This was a project for my Typography class in the Spring of 2024. I was tasked with designing a magazine brand and the cover, table of contents,and featured article layout for one issue. I chose to create a magazine based on tabletop role playing games and the community that surrounds them. The look of the magazine was inspired by the aesthetics of classic fantasy and fantasy roleplaying games.",
+        "images": [
+            {
+                "image": "./rollplay/cover.jpg",
+                "imgCaption": "Cover",
+                "imgAlt": "A magazine cover for RollPlay magazine, The Latest in Tabletop Role Playing Games. The cover depicts a painted fantasy scene of a character staring up at a glowing green floating block against a blue sky. The cover story reads 'Explore something new: A first look at Critical Role's Daggerheart system'."
+            },
+            {
+                "image": "./rollplay/toc.jpg",
+                "imgCaption": "Table of Contents",
+                "imgAlt": "The table of contents layout for RollPlay magazine. The spread features large images representing articles, and the articles listed are separated into categories."
+            },
+            {
+                "image": "./rollplay/mockup.jpg",
+                "imgCaption": "Featured Article Mockup",
+                "imgAlt": "A mockup of the featured article for RollPlay magazine. Spread one is largely a splash page with the article title, 'Rolling with Hope', and featured image. The featured image is the same here as the cover of the magazine. The page is turning, revealing bits of the second spread of the article."
+            },
+            {
+                "image": "./rollplay/spread-1.jpg",
+                "imgCaption": "Featured Article: Spread One",
+                "imgAlt": "A better look at the first spread of the featured article."
+            },
+            {
+                "image": "./rollplay/spread-2.jpg",
+                "imgCaption": "Featured Article: Spread Two",
+                "imgAlt": "A better look at the second spread of the featured article. This spread is mostly comprised of text."
+            }
+        ],
+        "design": true,
+        "illustration": false
+    },
+    {
+        "slug": "isdh",
+        "name": "[Insert Self Discovery Here]",
+        "thumbnail": "./thumbnails/isdh.jpg",
+        "description": "Book Design",
+        "summary": "This was a freelance project I took on in the Summer of 2019. I was tasked with creating the cover, interior layout and illustrations for an independently published novel. The novel is a new adult queer romance set in a cabin in the woods. I wanted to invoke a feeling of rustic coziness wih the cover and layout.",
+        "images": [
+            {
+                "image": "./isdh/display.jpg",
+                "imgCaption": "",
+                "imgAlt": "A display of five copies of [Insert Self Discovery Here]. Four copies are stacked and the last copy is displayed upright on top of them to show off the front cover. The cover shows a small group of cabins surrounded by trees below a blue starry night sky. The stars are arranged in a subtle heart around the title."
+            },
+            {
+                "image": "./isdh/open-outer.jpg",
+                "imgCaption": "The Cover",
+                "imgAlt": "A copy of [Insert Self Discovery Here] lying open and face down to display the front cover, spine, and back cover."
+            },
+            {
+                "image": "./isdh/september.jpg",
+                "imgCaption": "Chapter Illustration: September",
+                "imgAlt": "A pencil illustration of a game of Trivial Pursuit."
+            },
+            {
+                "image": "./isdh/october.jpg",
+                "imgCaption": "Chapter Illustration: October",
+                "imgAlt": "A pencil illustration of a roaring fireplace."
+            },
+            {
+                "image": "./isdh/april.jpg",
+                "imgCaption": "Chapter Illustration: April",
+                "imgAlt": "A pencil illustration of a map and a set of keys."
+            }
+        ],
+        "design": true,
+        "illustration": true
+    },
+    {
+        "slug": "sweet-little-hauntings",
+        "name": "Sweet Little Hauntings",
+        "thumbnail": "./thumbnails/slh.gif",
+        "description": "Small Business Branding and Product Design",
+        "summary": "Sweet Little Hauntings is the beginnings of my Capstone project for my Masters in Graphic and Web Design. I chose to create branding and products for a small art business with a pastel horror/pastel goth theme. I designed a full branding suite and products for the online shop. The products and branding are meant to explore themes of isolation, mental illnesses such as depression and anxiety, and death. The goal is to be able to connect to these difficult subjects in a softer, more approachable way. In the future, I intend to expand this project into Alternate Reality Game-like digital horror narrative experience that takes place in this small business’s online shop. The story will explore the same themes as the shop, although it will deviate from the pastel aesthetic to focus more on the horror elements.",
+        "images": [
+            {
+                "image": "./slh/all-mockups.jpg",
+                "imgCaption": "Everything at Once!",
+                "imgAlt": "A mockup of all of the products featured in the Sweet Little Hauntings shop, packaged in pink crinkle paper in the custom mailer box."
+            },
+            {
+                "image": "./slh/mailer-box.jpg",
+                "imgCaption": "Custom Mailer Box",
+                "imgAlt": "A photographic mockup of a black mailer box with custom printed patterns for the Sweet Little Hauntings shop. The inside of the box is pink with more patterns of the shop mascot, Frankie."
+            },
+            {
+                "image": "./slh/deadly-boba.jpg",
+                "imgCaption": "Sticker Sheet: Deadly Boba",
+                "imgAlt": "A mockup of a holographic sticker sheet featuring various bubble tea drinks. Instead of normal boba, the drinks are filled with ghosts, skulls, teeth, gravestones, and eyeballs."
+            },
+            {
+                "image": "./slh/your-ghost.jpg",
+                "imgCaption": "Acrylic Keychain: Your Ghost",
+                "imgAlt": "A mockup of a double-sided acrylic keychain. One side features a girl with pink hair, light green eyes, and a teal sweater. The other side features the same girl, but her colors have been changed so she looks ghostly and her eyes are glowing white. The ghost side has a faint holographic shimmer."
+            },
+            {
+                "image": "./slh/dirt-nap.jpg",
+                "imgCaption": "Enamel Pin: Dirt Nap",
+                "imgAlt": "A mockup of an enamel pin shaped like a gravestone with some blades of grass surrounding the bottom edges. The gravestone reads 'Time for a dirt nap'."
+            },
+            {
+                "image": "./slh/frankie.jpg",
+                "imgCaption": "Enamel Pin: Happy Frankie",
+                "imgAlt": "A mockup of an enamel pin shaped like a friendly ghost with a pink bow on her head."
+            },
+            {
+                "image": "./slh/site-mockups.jpg",
+                "imgCaption": "What's Next",
+                "imgAlt": "The image of all of the products mocked up together, now displayed on a phone and a laptop screen."
+            }
+        ],
+        "design": true,
+        "illustration": true
+    },
+    {
+        "slug": "future-of-hope",
+        "name": "A Future of Hope",
+        "thumbnail": "./thumbnails/foh.gif",
+        "description": "UI Design and Animation",
+        "summary": "This was a project for my Design in Context class in Fall of 2024. I was tasked with creating a video to represent how I see the future of my design practice. I was inspired by my lifelong love of games to represent my future as a point-and-click visual novel. The video uses a gameplay trailer as a framing device to show how I see myself and my career in two, five, and ten years from now.",
+        "images": [
+            {
+                "image": "./foh/today.jpg",
+                "imgCaption": "Today",
+                "imgAlt": "A screenshot of a game UI with a banner that reads 'Today' in the upper right corner. The scene features a person sitting up in bed and yawning with a dark vignette around the edges. The bottom of the screen features stat bars on one side, inventory on the other, and text in the middle. The text reads 'Good Morning! What are you going to do today?' The option 'stay in bed all day' is selected."
+            },
+            {
+                "image": "./foh/2yr.jpg",
+                "imgCaption": "Two Years",
+                "imgAlt": "A screenshot of a game UI with a banner that reads '2 Years' in the upper right corner. The scene features a person working in a cubicle with a framed picture of juvenile plants behind them. The bottom of the screen features stat bars on one side, inventory on the other, and text in the middle. The text reads 'The project needs something. What will you change?' The option 'new colors' is selected."
+            },
+            {
+                "image": "./foh/10yr.jpg",
+                "imgCaption": "Ten Years",
+                "imgAlt": "A screenshot of a game UI with a banner that reads '10 Years' in the upper right corner. The scene features a person working at a home office in front of a wall of art they have created and a window with a view of blooming plants. The bottom of the screen features stat bars on one side, inventory on the other, and text in the middle. The text reads 'What will you do next?' The option 'keep working' is selected."
+            },
+            {
+                "image": "./foh/art-mini.jpg",
+                "imgCaption": "Minigame: Making Art",
+                "imgAlt": "A screenshot of a game UI. The scene features a screen tablet with a hand drawing on it. The cursor is positioned on top of the tip of the stylus. The text reads 'Make a masterpiece!'"
+            }
+        ],
+        "video": "https://www.youtube.com/embed/qoXxjIDIlL8?si=proqIiRA9sDvEb7g",
+        "design": true,
+        "illustration": true
+    },
+    {
+        "slug": "maeve-briar",
+        "name": "Maeve Briar",
+        "thumbnail": "./thumbnails/maeve.gif",
+        "description": "Character Design",
+        "summary": "Maeve is the result of a Character Design class I took in Spring of 2024. When I set out to design Maeve, all I knew was that I wanted a little witch to fit in with a whimsical, magical world. On the way, her story became so much bigger. Maeve fits into the same world as some characters that I first conceived of in 2017. Lita, the bear girl, and Mirabelle, the witch, were two characters I started to draw for fun. In 2018, I decided to use them to participate in an online drawing challenge called “Inktober,” where participants create one drawing every day in October based on a series of provided prompts. I wanted to tell a story using the prompts, and on day fourteen I created a new character, Heddwch, based on the prompt “Clock.” I can see Heddwch and Maeve becoming very important to each other as they journey, learn, and grow together.",
+        "images": [
+            {
+                "image": "./maeve/magic.png",
+                "imgCaption": "Maeve Doing Magic",
+                "imgAlt": "A young woman wearing a mushroom hat casts a sparkly purple spell."
+            },
+            {
+                "image": "./maeve/devastated.png",
+                "imgCaption": "A Devastating Situation",
+                "imgAlt": "A young brunette woman kneels on the ground, one hand on her forehead as she weeps."
+            },
+            {
+                "image": "./maeve/gardening.png",
+                "imgCaption": "Battling the Squirrelamanders in the Garden",
+                "imgAlt": "A young woman in a mushroom hat tries to pull a carrot out of the mouth of a red, green, and brown reptile-like creature with a fluffy tail."
+            },
+            {
+                "image": "./maeve/defining-moment.jpg",
+                "imgCaption": "Maeve's Defining Moment with Heddwch",
+                "imgAlt": "A young blonde-haired woman in a lavender dress puts her head in her hands as another young brunette woman looks at her in concern."
+            },
+            {
+                "image": "./maeve/inspo.jpg",
+                "imgCaption": "Sketches from Inktober 2018",
+                "imgAlt": "A series of black-and-white sketches that includes a clock-faced girl, a submarine whale, a bear with a human face, and a witch."
+            },
+            {
+                "image": "./maeve/heddwch.jpg",
+                "imgCaption": "An old painting of Heddwch",
+                "imgAlt": "A framed portrait of a young woman sitting in an ornate cushioned chair. She has an analog clock for a face."
+            }
+        ],
+        "design": false,
+        "illustration": true
+    },
+    {
+        "slug": "digital-art",
+        "name": "Digital Illustration",
+        "thumbnail": "./thumbnails/digital-art.jpg",
+        "description": "Miscellaneous Personal and Commissioned Drawings",
+        "summary": "I have been drawing for as long as I could hold a pencil, and I've been drawing digitally for the past 20 years. Here are some of my favorites!",
+        "images": [
+            {
+                "image": "./illustration/downpour.jpg",
+                "imgCaption": "Caught in the Downpour",
+                "imgAlt": "A young brunette woman with a bob haircut walks in the forest on a rainy day, carrying an umbrella and catching droplets on her hand."
+            },
+            {
+                "image": "./illustration/starlight-lady.jpg",
+                "imgCaption": "Starlight Lady",
+                "imgAlt": "A golden-eyed and dark-haired woman sparkling with stars presses her hand to her cheek as she wears a shawl of clouds with the full moon above her."
+            },
+            {
+                "image": "./illustration/electus.jpg",
+                "imgCaption": "Commission: Electus the Paladin",
+                "imgAlt": "A blonde man in armor wields a sword and ornate blue shield."
+            },
+            {
+                "image": "./illustration/rose.jpg",
+                "imgCaption": "Rose Red the Paladin",
+                "imgAlt": "A red-headed woman in blue armor takes on an offensive stance as she wields a sword and shield."
+            },
+            {
+                "image": "./illustration/saisley-ammi.jpg",
+                "imgCaption": "Saisley the Dragonrider",
+                "imgAlt": "A white-haired young woman in a pink dress rides a pink and gold serpentine winged dragon. The pink and yellow sunset behind them is silhouetting a small town in the distance."
+            },
+            {
+                "image": "./illustration/sukheri-rurac.jpg",
+                "imgCaption": "Commission: Sukheri and Rurac Share a Moment",
+                "imgAlt": "A raccoon girl kneeling on the ground holds hands with a green reptile man by a fallen tree, a fence, and a house surrounded by hedges. The girl has a large coat draped around her shoulders."
+            }
+            
+        ],
+        "design": false,
+        "illustration": true
+    }
+]

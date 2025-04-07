@@ -1,0 +1,25 @@
+.designCard {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    border: 1px solid lavender;
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    transition: 0.3s;
+}
+
+.designCard:hover {
+    box-shadow: 5px 3px 20px rgba(69, 78, 99, 0.6);
+}
+
+.cardImg img {
+    max-width: 650px;
+    width: 100%;
+    border-radius: 10px;
+}
