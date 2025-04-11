@@ -36,8 +36,8 @@ class Petal {
       }
   }
 }
-// Make petals! 
 
+// Make petals! 
 let petals = [];
 for(let loopVar = 0; loopVar < 10; loopVar++) {
   const newpetal = new Petal(400, 600, 10, 20);
