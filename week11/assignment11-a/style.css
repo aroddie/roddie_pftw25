@@ -1,0 +1,39 @@
+html, body {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+canvas {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  padding-right: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  padding: 16px 20px;
+  background: lavender;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+nav li:hover {
+  box-shadow: 0px 4px 8px rgba(105, 98, 105, .3);
+}
+
+.current-page {
+  background-color: lavenderblush;
+  font-weight: 600;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
