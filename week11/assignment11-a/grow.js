@@ -96,9 +96,7 @@ class Branch {
     // make a branch bloom when it "dies"
     blossom() {
         if (this.age === maxAge || this.distFromStart >= height - 50) {
-            fill('deeppink');
-            stroke('deeppink');
-            ellipse(this.x, this.y, 4, 6);
+            text('🌸', this.x - 8, this.y);
         }
     }
 }
