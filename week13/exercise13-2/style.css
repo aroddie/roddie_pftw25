@@ -1,0 +1,19 @@
+html, body {
+  width: 95%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+canvas {
+  display: block;
+}
+
+.small {
+  font-size: small;
+  font-style: italic;
+  color: red;
+  max-width: 500px;
+  text-align: center;
+}
