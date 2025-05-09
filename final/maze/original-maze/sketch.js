@@ -1,7 +1,8 @@
 let dot;
 let grid;
+let lineWeight;
 
-let pressedKeys = {};
+let pressedKeys = [];
 
 function setup() {
   createCanvas(800, 800);
@@ -10,11 +11,11 @@ function setup() {
 }
 
 function draw() {
-  background(35);
+  background(grid);
   dot.move();
   dot.show();
-  drawMaze();
-
+  dot.mazeWalls();
+  dot.block();
 }
 
 function keyPressed() {
@@ -56,6 +57,7 @@ class Dot {
     walk.setMag(this.speed);
     this.x += walk.x;
     this.y += walk.y;
+    
     // create boundaries at canvas edge
     if (this.x <= 0 + this.size/2) {
       this.x = this.x + this.speed;
@@ -73,18 +75,16 @@ class Dot {
 
   show() {
     // control appearance of the dot
-    stroke('lavenderblush');
+    stroke('indigo');
     strokeWeight(this.size);
     point(this.x, this.y);
-
-
   }
-}
 
-function drawMaze() {
+mazeWalls() {
     //maze
-    stroke('lightblue')
-    strokeWeight(10);
+    lineWeight = 15;
+    stroke('midnightblue')
+    strokeWeight(lineWeight);
     // Outer Borders
     line(100, 700, 700, 700); // bottom border
     line(100, 100, 100, 700); // left border
@@ -166,3 +166,33 @@ function drawMaze() {
       line(600, 600, 600, 700);
     // End Maze
 }
+  block() {
+    // prevents the dot from crossing over maze walls
+    if (
+      //left barrier wall with gap
+      this.x <= 700 + lineWeight/2 + this.size/2 && 
+      this.x >= 700 - lineWeight/2 - this.size/2 &&
+      this.y >= 100 &&
+      this.y <= 600 ||
+      this.x <= 700 + lineWeight/2 + this.size/2 &&
+      this.x >= 700 - lineWeight/2 - this.size/2 &&
+      this.y >= 650 &&
+      this.y <= 700 ||
+      this.x <= 725 + lineWeight/2 + this.size/2 &&
+      this.x >= 700 - lineWeight/2 - this.size/2 &&
+      this.y <= 600 + lineWeight/2 + this.size/2 &&
+      this.y >= 600 - lineWeight/2 - this.size/2 ||
+      this.x <= 725 + lineWeight/2 + this.size/2 &&
+      this.x >= 700 - lineWeight/2 - this.size/2 &&
+      this.y <= 650 + lineWeight/2 + this.size/2 &&
+      this.y >= 650 - lineWeight/2 - this.size/2 
+      //
+    ) {
+      this.speed = this.speed * -1;
+    } else {
+      this.speed = 3;
+    }
+
+  }
+}
+
