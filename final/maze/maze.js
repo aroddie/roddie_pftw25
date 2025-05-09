@@ -1,43 +1,79 @@
+/***********************************************************
+ * Created by Arden Roddie for MCAD Programming for the Web
+ * *****************Spring Semester 2025********************
+ ***********************************************************/
+
+//******************
+// Global Variables
+// ************** */
+// Sprites
 let dot;
 let walls;
 let star;
+let instruct;
 
+// Movement
+let pressedKeys = [];
+
+// Win State
 let restart;
 let secret;
 
-let pressedKeys = [];
+// Styles
+let sansSerif;
+let serif;
+let bgColor = '#040720';
+let accentColor = 'goldenrod';
+let textColor = 'lavenderblush'
 
-
-let bgColor = '#232323';
+//****************
+// Canvas Setup
+// ************ */
+function preload() {
+  sansSerif = loadFont('./fonts/Raleway.ttf');
+  serif = loadFont('./fonts/Tagesschrift.ttf');
+}
 
 function setup() {
-    createCanvas(800, 800);
-
-    // walls.debug = true;
+    let maze = createCanvas(800, 800);
+    maze.parent('mazeHolder')
     makeDot();
     makeStar();
     drawMaze();
-
+    instructions();
 }
 
 function draw() {
     background(bgColor);
     move();
     winCondition();
-}
+  }
+
+  function instructions(){
+    noStroke();
+    textFont(sansSerif);
+    instruct = new Sprite(400, 50, 180, 0, STATIC);
+    instruct.text = 'use WASD keys to move';
+    instruct.textSize = 16;
+    instruct.textColor = textColor;
+    instruct.color = bgColor;
+  }
 
 //*********************************
-// Player interaction: Dot 
+// Dot Creation and Management 
 // ********************************/
 function makeDot() {
     strokeWeight(10); // offsets the dot to make collisions appear better
     dot = new Sprite(750, 625, 30);
-    dot.color = 'lavenderblush';
+    dot.color = textColor;
     dot.stroke = bgColor; // makes stroke blend in with the background
     // dot.debug = true;
 }
 
-// I've chosen to use this method of movement rather than p5.play's integrated keyboard controls because this allows for multiple keys to be read at once, which creates a smoother movement //
+//** I've chosen to use this method of movement rather than 
+// p5.play's integrated keyboard controls because this allows 
+// for multiple keys to be read at once, which creates a 
+// smoother movement in my opinion */
 function keyPressed() {
     pressedKeys[key] = true;
   }
@@ -65,8 +101,7 @@ function move() {
       }
       walk.setMag(speed);
       dot.x += walk.x;
-      dot.y += walk.y;
-       
+      dot.y += walk.y;      
 }
 
 //*****************
@@ -74,26 +109,28 @@ function move() {
 // ****************/
 
 function makeStar() {
-    star = new Sprite();
-    star.diameter = 30;
-    star.image = '🌟';
+    star = new Sprite(400, 400, [3, -72, 3, 144, 5]);
+    star.color = accentColor;
     // star.debug = true;
 }
 
 function winCondition() {
-    if (dot.overlapping(star) === 20) {
+    if (dot.overlaps(star)) {
         star.remove();
-        fill('green');
-        textSize(60);
-        text('You Win!', 300, 90);
+        instruct.remove();
+        fill(accentColor);
+        textSize(72);
+        textFont(serif);
+        text('You Win!', 200, 80);
         restart = createButton('Play Again?');
-        restart.position(600, 200);
+        restart.position(550, 40);
+        restart.parent('mazeHolder'); // makes button position relative to the canvas instead of the webpage
         restart.mousePressed(replay);
         textSize(20);
-        secret = createA('./original-maze/', '🗝️', '_blank');
-        secret.position(50, 200);
+        secret = createA('./original-maze/', '🗝️', '_blank'); // creates sneaky link to my first maze attempt
+        secret.position(100, 50);
+        secret.parent('mazeHolder'); // makes link position relative to the canvas instead of the webpage
         noLoop();
-
     }
 }
 
@@ -109,7 +146,7 @@ function replay() {
 // *****************/
 function drawMaze() {
     walls = new Group();
-    walls.stroke = 'lightblue';
+    walls.stroke = 'lightsteelblue';
     walls.strokeWeight = 10;
     walls.collider = STATIC;
     // Canvas borders [0]
@@ -189,5 +226,4 @@ function drawMaze() {
             //[32]
             new walls.Sprite(600, 600, [[0, 100]]);
         // End Maze
-    
 }

@@ -1,8 +1,85 @@
-html, body {
-  margin: 0;
+/*********
+Imports
+*********/
+@import url('../fonts/Raleway.ttf');
+@import url('../fonts/Tagesschrift.ttf');
+
+/***************
+Global Variables
+***************/
+:root {
+  --text-color: lavenderblush;
+  --background: #040720;
+  --accent: goldenrod;
+  --serif: "Tagesschrift", system-ui;
+  --sans-serif: "Raleway", sans-serif;
+}
+
+/***********
+Page Setup
+************/
+html, body, main {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto!important;
   padding: 0;
+  color: var(--text-color);
+  background-color: var(--background);
+}
+
+header {
+  max-width: 600px;
+  margin: 10px auto;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+header h1, header p {
+  margin: 0;
 }
 
 canvas {
   display: block;
+}
+
+#mazeHolder {
+  width: 800px;
+  height: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/**********
+Typography
+************/
+h1 {
+  font-family: var(--serif);
+}
+
+p {
+  font-family: var(--sans-serif);
+}
+
+a {
+  text-decoration: none;
+}
+
+/************
+Button Style
+************/
+button {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--text-color);
+  color: var(--background);
+  font-family: var(--serif);
+  font-size: 20px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--accent);
 }
