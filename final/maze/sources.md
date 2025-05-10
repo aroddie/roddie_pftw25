@@ -7,7 +7,7 @@
 - https://www.youtube.com/watch?v=JV5XBmaQdIA
 
 ## Libraries
-- P5 Play: https://github.com/quinton-ashley/p5play
+- P5 Play: https://p5play.org/index.html | https://github.com/quinton-ashley/p5play 
 
 ## Favicon SVG code
 - CSS Tricks: https://css-tricks.com/emoji-as-a-favicon/
