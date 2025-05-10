@@ -1,8 +1,7 @@
 /*********
 Imports
 *********/
-@import url('../fonts/Raleway.ttf');
-@import url('../fonts/Tagesschrift.ttf');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Tagesschrift&display=swap');
 
 /***************
 Global Variables
