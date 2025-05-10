@@ -67,11 +67,10 @@ function makeDot() {
     dot = new Sprite(750, 625, 30);
     dot.color = textColor;
     dot.stroke = bgColor; // makes stroke blend in with the background
-    // dot.debug = true;
 }
 
 //** I've chosen to use this method of movement rather than 
-// p5.play's integrated keyboard controls because this allows 
+// p5play's integrated keyboard controls because this allows 
 // for multiple keys to be read at once, which creates a 
 // smoother movement in my opinion */
 function keyPressed() {
@@ -111,7 +110,6 @@ function move() {
 function makeStar() {
     star = new Sprite(400, 400, [3, -72, 3, 144, 5]);
     star.color = accentColor;
-    // star.debug = true;
 }
 
 function winCondition() {
